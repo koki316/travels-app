@@ -1,6 +1,4 @@
-.wrapper {
-  
-}
+
 
 /* ヘッダーCSS */
 
@@ -71,6 +69,16 @@
   text-decoration: none;
 }
 
+.logout a {
+  font-size: 15px;
+  background-color: lightseagreen;
+  border: 1px solid white;
+  padding: 14px;
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+}
+
 .new-user a {
   font-size: 15px;
   background-color: lightseagreen;
@@ -81,18 +89,28 @@
   text-decoration: none;
 }
 
+.login_name {
+  color: white;
+  padding-right: 50px;
+}
+
 /* メインCSS */
 
 .image{
   background-color: blue;
-  height: 90vh;
+  height: 60vh;
   width: 100%;
 }
 
 .list-pict {
-  margin-bottom: 20px;
-  height: 90vh;
+  height: 60vh;
   width: 100%;
+}
+
+.list-1 {
+  height: 40vh;
+  width: 30%;
+  margin-bottom: 100px;
 }
 
 .main {
@@ -101,7 +119,7 @@
 
 h2{
   margin-top: 40px;
-  margin-bottom: 300px;
+  margin-bottom: 30px;
   
 }
 

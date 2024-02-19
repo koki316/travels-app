@@ -1,6 +1,6 @@
 <div class = "main-header">
   <div class="header-name">
-    <a href="#">旅ナビ</a>
+    <%= link_to '旅ナビ', root_path, class: "top-page" %>
   </div>
 
   <div class = "prefecture">
@@ -11,17 +11,29 @@
     <a href = "#">カテゴリーから探す</a>
   </div>
 
+  <% if user_signed_in? %>
   <div class="create-travel-navi">
     <a href="#">旅行ナビを作成する</a>
   </div>
+  <% end %>
 </div>
 
 <div class = "rigth-header">
-  <div class = "login">
-    <a href="#">ログイン</a>
-  </div>
 
-  <div class = "new-user">
-    <a href="#">新規登録</a>
-  </div>
+  <% if user_signed_in? %>
+    <div class = "login_name">
+      <%= current_user.nickname  %>
+    </div>
+    <div class = "logout">
+      <%= link_to 'ログアウト', destroy_user_session_path, data: {turbo_method: :delete}, class: "logout" %>
+    </div>
+  <% else %>
+    <div class = "login">
+      <%= link_to 'ログイン', new_user_session_path, class: "sign-up" %>
+    </div>
+    <div class = "new-user">
+      <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %>
+    </div>
+  <% end %>
+
 </div>

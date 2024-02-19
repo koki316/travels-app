@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+}
+
+.login-title{
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+}
+
+.input-default {
+  width: 40%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.field {
+  font-size: 17px;
+  font-weight: bold ;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+.actions{
+  padding: 20px;
+  margin: 30px;
+}

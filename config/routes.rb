@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'travels/index'
+  devise_for :users
   root to: "travels#index"
 end
