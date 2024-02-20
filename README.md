@@ -17,9 +17,7 @@
 | -------------------- | ----------- |------------------------------- |
 | title                | string      | null:false                     |
 | description          | text        | null:false                     |
-| category_id          | integer     | null:false                     |
 | place                | integer     | null:false                     |
-| date                 | string      | null:false                     |
 | user                 | references  | null:false, foreign_key: true  |
 
 ### Association
