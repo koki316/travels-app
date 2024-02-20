@@ -13,7 +13,7 @@
 
   <% if user_signed_in? %>
   <div class="create-travel-navi">
-    <a href="#">旅行ナビを作成する</a>
+    <%= link_to '旅行ナビを作成する', new_travel_path, class: "sign-up" %>
   </div>
   <% end %>
 </div>
